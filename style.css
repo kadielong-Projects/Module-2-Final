@@ -22,11 +22,7 @@ body {
     margin: 0 auto;
 }
 
-.row__narrow {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
+/* Removed duplicate .row__narrow definition for consistency */
 
 .container {
     padding: 96px 0;
@@ -124,6 +120,7 @@ p {
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
+    font-weight: 900;
 }
 
 .nav__title {
@@ -446,7 +443,7 @@ header {
 }
 
 .feature {
-    width: calc(100% - 3);
+    width: calc(100% / 3);
 }
 
 .feature__row {
@@ -469,19 +466,19 @@ header {
 
 .feature__text {
     margin-top: 8px;
-   margin-left: 16px;
+    margin-left: 16px;
 }
 
 .feature__para {
     margin-top: 16px;
     font-size: 16px;
-    max-width: calc(634px / 3);
+    max-width: 210px; /* Set to a clear, descriptive value */
     color: rgb(124, 139, 161);
     line-height: 2;
     font-weight: 500;
 }
 
-.feature__blob {
+.features__blob {
     transform: translateX(96px) translateY(192px) scaleX(1) scaleY(1);
     position: absolute;
     right: 0;
@@ -508,6 +505,7 @@ header {
 #quality .section__title,
 #values .section__title {
     line-height: 1.25;
+    font-weight: bold;
 }
 
 #quality .btn {
@@ -590,7 +588,7 @@ header {
     line-height: 1;
 }
 
-.steps__description {
+.step__description {
     display: flex;
     flex-direction: column;
     margin-left: 24px;
@@ -927,13 +925,8 @@ header {
 
 /* TESTIMONIALS */
 
-section #testimonials {
-    padding: 0px;
-}
-
-#testimonials .container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+#testimonials {
+    padding: 0;
 }
 
 #testimonials .row {
@@ -945,7 +938,15 @@ section #testimonials {
     justify-content: space-between;
 }
 
-.testimonials__img,
+.testimonials__container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.testimonials__img {
+    width: 50%;
+}
+
 .testimonials__description {
     width: 50%;
 }
@@ -1468,12 +1469,7 @@ h1 {
 }
 
   
-#features .section__title,
-  
-#pricing .section__title {
-    font-size: 48px;
-  
-}
+/* Removed duplicate #features .section__title, #pricing .section__title for DRYness */
 
   
 #testimonials .container {
