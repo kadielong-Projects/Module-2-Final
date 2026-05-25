@@ -832,6 +832,7 @@ header {
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    border: none;
 }
 
 .plan__button:hover {
@@ -1041,6 +1042,7 @@ header {
     border-radius: 50%;
     margin: 0 12px;
     transition: all 300ms ease;
+    border: none;
 }
 
 .testimonial__button:hover {
